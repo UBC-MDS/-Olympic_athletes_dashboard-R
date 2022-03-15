@@ -7,10 +7,10 @@ This document (the README file) is a hub to give you some information about the 
 
 - [Olympic Athletes Dashboard](#olympic-athletes-dashboard)
   - [Welcome!](#welcome)
+  - [Demonstration](#demonstration)
   - [What are we doing?](#what-are-we-doing)
     - [The problem](#the-problem)
     - [The solution](#the-solution)
-  - [Demonstration](#demonstration)
   - [Who are we?](#who-are-we)
   - [What do we need?](#what-do-we-need)
   - [Installation](#installation)
@@ -18,6 +18,17 @@ This document (the README file) is a hub to give you some information about the 
   - [Contact us](#contact-us)
   - [License](#license)
   - [Thank you](#thank-you)
+
+## Demonstration
+
+Our [Olympics Athlete Dashboard](https://olympic-athletes-dash.herokuapp.com/) currently consists of:
+* 4 plots: 3 histograms for athletes' `Age`, `Weight`, and `Height` distribution, with two colors to distinguish genders.
+* 5 filters on the left side bar: a slider for `year` range selection, two drop-down menus for `sports` and `countries`, and two radio buttons to select `medal` and `season`.
+* All the plots are on the "Plots" tab, the "Data Table" tab shows the clean data based on the selected filters. 
+
+<p align="center">
+  <img src="docs/Olympic_athletes_dashboard.gif" width=400/>
+</p>
 
 ## What are we doing?
 
@@ -40,17 +51,6 @@ The [Olympic Athletes Dashboard app](https://olympic-athletes-dash.herokuapp.com
 * For the public: provide an interactive tool that makes Olympic athletes' data accessible and visible to the general public or any sports enthusiast.
 
 So, corresponding to the different problems, users have the options to customize diverse filters and obtain insights from the Olympic Athletes data. And the overall goal is to answer the personal attributes (ages, weights and heights) and the gloabl ditributions of the Olympic atheltes based on customized criteria. 
-
-## Demonstration
-
-Our [Olympics Athlete Dashboard](https://olympic-athletes-dash.herokuapp.com/) currently consists of:
-* 4 plots: 3 histograms for athletes' `Age`, `Weight`, and `Height` distribution, with two colors to distinguish genders.
-* 5 filters on the left side bar: a slider for `year` range selection, two drop-down menus for `sports` and `countries`, and two radio buttons to select `medal` and `season`.
-* All the plots are on the "Plots" tab, the "Data Table" tab shows the clean data based on the selected filters. 
-
-<p align="center">
-  <img src="docs/Olympic_athletes_dashboard.gif" width=400/>
-</p>
 
 ## Who are we?
 
