@@ -13,7 +13,7 @@ This document (the README file) is a hub to give you some information about the 
     - [The solution](#the-solution)
   - [Who are we?](#who-are-we)
   - [What do we need?](#what-do-we-need)
-  - [Installation](#installation)
+  - [Installation and Reproduction](#installation-and-reproduction)
   - [Get involved](#get-involved)
   - [Contact us](#contact-us)
   - [License](#license)
@@ -68,29 +68,27 @@ We'd love your feedback along the way either from a developer view or from a use
 
 Our ultimate goal is to mitigate the misconceptions of the Olympic athletes and promote involvement from the general public in Olympic sports.
 
-## Installation
+## Installation and Reproduction
 
 1. You could install or clone the development version of Olympic Athletes Dashboard from GitHub to your local directory with the command below from the command line:
 
 ```
-git clone https://github.com/UBC-MDS/Olympic_athletes_dashboard.git
+git clone https://github.com/UBC-MDS/Olympic_athletes_dashboard-R.git
 ```
 
-2. You could setup a virtual enviroment using the commands below from the root of the cloned repository:
+2. Then, go to the root of the cloned repository:
 
 ```
-virtualenv olympic_athletes
-source olympic_athletes/bin/activate
-pip install -r requirements.txt
+cd Olympic_athletes_dashboard-R
 ```
 
-3. You could run the Olympic Athlete Dashboard app in the virtual environment on the local server using the command below from the root of this repository:
+3. You could run the Olympic Athlete Dashboard app on the local server using the command below from the root of this repository:
 
 ```
-python src/app.py
+Rscript src/app.R
 ```
 
-4. You could view the webpage locally by navigating to the address http://127.0.0.1:8050/ in your browser.
+4. Finally, you could view the webpage locally by navigating to the address http://0.0.0.0:8050/ in your browser.
 
 ## Get involved
 
