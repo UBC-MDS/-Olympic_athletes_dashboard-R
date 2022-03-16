@@ -9,7 +9,7 @@ library(plotly)
 df = read_csv('data/processed/clean_data.csv')
 
 #Data wrangling to correct country names before join
-df<- df |>
+df<- df %>%
   mutate(Team = case_when (Team == "Great Britain" ~ "United Kingdom",
                            Team == "Bahamas" ~ "Bahamas, The",
                            Team == "Chinese Taipei" ~ "Taiwan",
