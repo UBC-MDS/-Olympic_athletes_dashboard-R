@@ -27,7 +27,7 @@ Our [Olympics Athlete Dashboard](https://olympic-athletes-dash-r.herokuapp.com/)
 * All the plots are on the "Plots" tab, the "Data Table" tab shows the clean data based on the selected filters. 
 
 <p align="center">
-  <img src="docs/Olympic_athletes_dashboard.gif" width=400/>
+  <img src="docs/Olympic_athletes_dashboard_R.gif" width=400/>
 </p>
 
 ## What are we doing?
