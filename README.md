@@ -1,4 +1,4 @@
-# Olympic Athletes Dashboard
+# [Olympic Athletes Dashboard](https://olympic-athletes-dash-r.herokuapp.com/)
 ## Welcome!
 
 Welcome to the Olympic Athletes Dashboard app project repository! Based on a dataset of approximately 270,000 Olympic Athletes, spanning from all Olympic Games between 1896 and 2016, this app aims to help you get some insight into Olympic Athletes.
