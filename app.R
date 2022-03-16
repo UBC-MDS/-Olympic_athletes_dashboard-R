@@ -53,15 +53,20 @@ app$layout(
           htmlDiv(
             list(
               htmlH2("Filters",
-                     style = list('flex-grow'= '1','margin'= '0px','border-bottom'= '2px solid white','line-height'= '1')
+                     style = list('text-align'= 'bottom','margin-bottom'= '0px','border-bottom'= '2px solid white','line-height'= '1')
               ),
               htmlDiv(
+                
                 list(
-                  htmlH5("Drag Slider To Select Years"),
+                  htmlH5("Drag Slider To Select Years",
+                         style = list('margin-top' = '30px')),
                   dccRangeSlider(
                     min = 1896, max = 2016,
                     
-                    marks = List(for (i in seq(1896, 2016, 8)) i = list("label" = sprintf('%s',i), 'style'= list('transform'= 'rotate(90deg)', 'color'= 'white')) ),
+                    marks = List(for (i in seq(1896, 2016, 8)) i = list("label" = sprintf('%s',i), 
+                                                                        'style'= list('transform'= 'rotate(45deg)',
+                                        
+                                                                                      'color'= 'white'))),
                     
                     id = 'year_range',
                     value = list(1896, 2016),
@@ -216,19 +221,19 @@ app$callback(
     )
     
     fig1 <- ggplot(filtered, aes(x=Height,fill = Sex))+ 
-      geom_histogram(bins=50,alpha = 0.5,position = 'identity')+
+      geom_histogram(bins=50,alpha = 0.6,position = 'identity')+
       labs(x="Height (cm)", title = "Distribution of Heights")+
       scale_y_continuous(labels = scales::label_number_si())+
       theme
     
     fig2 <- ggplot(filtered, aes(x=Weight,fill = Sex))+ 
-      geom_histogram(bins=50,alpha = 0.5,position = 'identity')+
+      geom_histogram(bins=50,alpha = 0.6,position = 'identity')+
       labs(x="Weight (kg)", title = "Distribution of Weights")+
       scale_y_continuous(labels = scales::label_number_si())+
       theme
     
     fig3 <- ggplot(filtered, aes(x=Age,fill = Sex))+ 
-      geom_histogram(bins=50,alpha = 0.5,position = 'identity')+
+      geom_histogram(bins=50,alpha = 0.6,position = 'identity')+
       labs(x="Age (years)", title = "Distribution of Age")+
       scale_y_continuous(labels = scales::label_number_si())+
       theme
@@ -267,9 +272,10 @@ app$callback(
                             tickfont = list('color'= 'white', 'family'= 'helvetica')
                             )
       
-    map <- map %>% layout(title= list('x'= 0.1, 'pad'=list('b'= 10,'t' = 10), text = 'Number of Athletes Per Country',
-                                      font = list('color'= 'white', 'family'= 'helvetica',size = 20),
-                                      yanchor = "top"),
+    map <- map %>% layout(title= list('x'= 0 , 'pad'=list('b'= 15,'t' = 10), text = '<b> Number of Athletes Per Country <b>',
+                                      font = list('color'= 'white', 'family'= 'helvetica',size = 25),
+                                      yanchor = "top",
+                                      xanchor = "left"),
                           paper_bgcolor='rgba(0,0,0,0)',
                           geo= list('bgcolor'= 'rgba(0,0,0,0)',
                                     'framecolor'= 'rgba(0,0,0,0)',
