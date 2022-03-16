@@ -85,7 +85,7 @@ cd Olympic_athletes_dashboard-R
 3. You could run the Olympic Athlete Dashboard app on the local server using the command below from the root of this repository:
 
 ```
-Rscript src/app.R
+Rscript app.R
 ```
 
 4. Finally, you could view the webpage locally by navigating to the address http://0.0.0.0:8050/ in your browser.
