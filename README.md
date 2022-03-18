@@ -22,9 +22,8 @@ This document (the README file) is a hub to give you some information about the 
 ## Demonstration
 
 Our [Olympics Athlete Dashboard](https://olympic-athletes-dash-r.herokuapp.com/) currently consists of:
-* 4 plots: 3 histograms for athletes' `Age`, `Weight`, and `Height` distribution, with two colors to distinguish genders.
+* 4 plots: 3 histograms for athletes' `Age`, `Weight`, and `Height` distribution with two colors to distinguish genders that can interactively zoom in or out, and a map shows the number of athlete per country. 
 * 5 filters on the left side bar: a slider for `year` range selection, two drop-down menus for `sports` and `countries`, and two radio buttons to select `medal` and `season`.
-* All the plots are on the "Plots" tab, the "Data Table" tab shows the clean data based on the selected filters. 
 
 <p align="center">
   <img src="docs/Olympic_athletes_dashboard_R.gif" width=400/>
